@@ -1,0 +1,25 @@
+class Hello
+{
+    public static void main(String a[])
+    {
+        char letter='S';
+        float num=5.5f;
+        double value=5.5;
+        byte n=127;
+        short n1=129;
+        long n2=2345l;
+        boolean b=false;
+
+
+        int value1=10;
+        int value2=2;
+        int addition=value1+value2;
+        int subtraction=value1-value2;
+        int multiplication=value1*value2;
+        int division=value1/value2; 
+        System.out.println(addition);
+        System.out.println(subtraction);
+        System.out.println(multiplication);
+        System.out.println(division);
+    }
+}
