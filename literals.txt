@@ -1,0 +1,18 @@
+class Hello
+{
+    public static void main(String a[])
+    {
+        // literals.
+        char c='A';
+        c++;//character get incremented.
+
+        
+    double r=12e10;
+    int n=0b100;
+    int k=10_00_000;
+    System.out.println(n);
+    System.out.println(k);
+    System.out.println(r);
+    System.out.println(c);
+    }
+}
