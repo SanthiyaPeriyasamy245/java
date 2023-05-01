@@ -1,0 +1,56 @@
+class day1{
+    public static void main(String a[])
+    {
+
+     
+        //conditional statements.
+        int h=1150;
+        int j=1120;
+        if(h>j)//for multiple statements use curly brackets.
+        {
+        System.out.println(h);
+        System.out.println("hello!");
+        }
+        else
+        System.out.println(j);
+//for three values comparision.
+int q=10;
+int w=50;
+int e=80;
+if(q>=w&&q>=e){
+System.out.println(q);
+System.out.println("value of q is the  greatest!");
+}
+// else if also get used.
+else 
+{ if(w>=e){
+    System.out.println("value of w is the  greates!");
+    System.out.println(w);
+}
+else{
+    System.out.println("value of e is the greatest!");
+    System.out.println(e);
+}
+    }
+
+// even or odd program.
+int u=5;
+if(u%2==0){
+System.out.println(u);
+System.out.println("even");
+}
+else{
+ System.out.println(u);
+System.out.println("odd");
+}
+//?:ternary operator.
+int n=4, k=0;
+int m=n%2==0?n:k;
+System.out.println(m);
+
+}
+}
+
+     
+
+   
