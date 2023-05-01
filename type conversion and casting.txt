@@ -1,0 +1,35 @@
+class day1{
+    public static void main(String a[])
+    {
+        // type conversion.
+       // byte only can store number from range -127 to +127.
+       // 1 byte=8bit.
+       int h=12;
+       byte q=121;
+       h=q;
+       System.out.println(h);
+
+     byte num=127;
+     int k=257;
+     int g=12;
+     // explicit conversion.
+     float f=12.56f;
+     g=(int)f;
+     System.out.println(g);
+     
+     
+    
+     //casting
+     //explicit conversion.
+     
+    num=(byte)k;
+    System.out.println(num);
+    int y=12;
+    byte t=(byte)y;
+    System.out.println(t);
+    }
+}
+
+     
+
+   
