@@ -1,0 +1,43 @@
+class day1{
+    public static void main(String a[])
+    {
+
+      //operators.
+      //arthemetic operator.
+      byte p=12;
+      byte b=25;
+      int result=p+b;
+      System.out.println(result);
+      //similarly subtraction and multiplication,modulo.
+      //increment or decrement operator.
+      int s=12;
+      int t=12;
+      int e=s++;//post-increment forst value get fetched then incremented.
+      System.out.println(e);
+     int j= ++t;//pre-increment first the value get incremented then fatched.
+     
+      System.out.println(j);
+      //relational operators. <,>,==,!=,<=,>=.
+      int d=12;
+      int l=12;
+      boolean answer=d<=l;
+      boolean q=d!=l;
+      System.out.println(answer);
+      System.out.println(q);
+      //logical operators. and ,or ,not.
+      int x=12;
+      int c=34;
+      int m=8;
+      int n=56;
+      boolean value=c>x&&m<n;
+      System.out.println(value);
+      
+
+
+
+    }
+}
+
+     
+
+   
