@@ -1,0 +1,49 @@
+class calculator{
+  public int add(int num1,int num2){
+    return num1+num2;
+  }
+    public int sub(int num1,int num2){
+      return num1-num2;
+    }
+    public int product(int num1,int num2)
+    {
+      return num1*num2;
+    }
+    public int division(int num1,int num2)
+    {
+      return num1/num2;
+    }
+    public int mod( int num1,int num2)
+    {
+      return num1%num2;
+    }
+
+  }
+
+class day1{
+    public static void main(String a[])
+    { 
+      int num1=50;
+      int num2=2;
+      calculator calc=new calculator();
+
+     int addition= calc.add(num1,num2);
+     System.out.println("addition="+addition);
+     int subtraction=calc.sub(num1,num2);
+     System.out.println("subtraction="+subtraction);
+     int multipilcation=calc.product(num1,num2);
+     System.out.println("multiplication="+multipilcation);
+     int division=calc.division(num1,num2);
+     System.out.println("division="+division);
+     int modulus=calc.mod(num1,num2);
+     System.out.println("modulus="+modulus);
+     
+
+
+
+      
+      
+     
+
+    }
+  }
