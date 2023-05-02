@@ -1,0 +1,23 @@
+class calculator{
+  public int multiplication(int num1 , int num2)
+  {
+      int product=num1*num2;
+      
+
+      
+      return product;
+      
+  }
+}
+class day1{
+    public static void main(String a[])
+    {
+      int num1=15;
+      int num2=6;
+      calculator calc=new calculator();
+      int answer=calc.multiplication(num1,num2);
+      System.out.println(answer);
+     
+
+    }
+  }
