@@ -1,0 +1,27 @@
+class calculator{
+  int g=2;//instance variable.this will be stored at heap.
+  public int add(int num1,int num2)//num1,num2 are local variables.
+  {
+    System.out.println("g="+g);
+    return num1+num2;
+    
+  }   
+  }
+
+
+class day1{
+    public static void main(String a[])
+    { 
+      int num1=50;
+      int num2=2;
+      calculator calc=new calculator();
+      calculator calc1=new calculator();
+      /*calc -is a referrence variable. */
+     int addition= calc.add(num1,num2);
+     System.out.println("addition="+addition);
+     calc1.g=12;
+     System.out.println(calc.g);
+     System.out.println(calc1.g);
+
+    }
+  }
