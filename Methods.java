@@ -1,51 +1,50 @@
-import java.util.Arrays;
-import java.util.Scanner;
+public class Methods {
+  static int num=123;// static variable can be accessable whole in the class.
+  public static void main(String[] args) {
+    int n1=12;
+    int n2=13;
+    int result=sum(n1,n2);
+    System.out.println(result);
+    // to pass a static methods variable to the other methods that method should be static static variable can be used in non-static method but non-static variable can't be used in static methods.
+    {
+      num=62;
+      System.out.println(num);
+      int c=10;
+      System.out.println(c);// if a variable intialised inside a block it's not accessable outside the box.but we can change the value of a variable which is declared outside the block.
+      // no need to reintialize the type of an variable inside a block.
+     n1=34;
+    }
+    System.out.println(num);
+    int n=371;
+    System.out.println(isprime(n));  
+    for(int i=1;i<=n;i++)
+    {
+       if(isprime(i))
+       System.out.println(i);
+    }
 
-public class Methods{
-  public static void main(String[]args)
+  }
+  public static int sum(int v1,int v2)
   {
-   
-    Scanner sc=new Scanner(System.in);
-    System.out.println("enter two values");
-    int a=sc.nextInt();
-    int b=sc.nextInt();
-    System.out.println("enter your name");
-    String name= sc.next();
-    change_name(name);// name not gonna change.
-    System.out.println(name);
-     welcome(); 
-     int sum=sum( a ,b);
-     System.out.println(sum);
-     swap(a,b);// it won't work. // in java there is only pass by value no pass by referrence.
-     System.out.println(a+" "+b);
-    int[]d={1,2,3,4,5,6,7,8};
-    new_array(d); // change a particular element in an array can be done by methods.
-    System.out.println(Arrays.toString(d));
-     
+
+    return v1+v2;
   }
-  static void welcome() {
-    
-      System.out.println("Hello User!");
-  }
-  static int sum(int n,int m)
+   public static int sum(int v1,int v2,int v3) 
+  //  it's not a problem if you have methods more than one method with same name parameters are really matters! this called method overloading.
   {
-    return n+m;
+    return v1+v2;
   }
-   static void swap(int a,int b) // it doesn't change the value
-  {  
-   int t=a;
-   b=a;
-   a=b;
-     
-   
-  }
-  static void change_name(String name)
+
+  public static boolean isprime(int n)
   {
-    name="Sandhya";  // here we are creating new object we didn't change the value of name.
+    int i=2;
+    while(i*i<=n)
+    {  
+      if(n%i==0)
+      return false;
+     i++;
+    }
+   return true;
   }
-  static void new_array(int[]arr)
-  {
-    arr[1]=99;
-  }
-  
+ 
 }
