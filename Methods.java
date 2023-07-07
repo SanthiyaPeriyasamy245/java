@@ -22,6 +22,13 @@ public class Methods {
        if(isprime(i))
        System.out.println(i);
     }
+      System.out.println(isarmstrong(n)); 
+      for(int i=100;i<=999;i++)
+      {
+          if(isarmstrong(i))
+          System.out.println(i);
+      }
+    
 
   }
   public static int sum(int v1,int v2)
@@ -45,6 +52,26 @@ public class Methods {
      i++;
     }
    return true;
+  }
+  public static boolean isarmstrong(int n)
+  {
+    int v=n;
+    int k=n;
+    int i=0;
+    while(n!=0)
+    {
+      i++;
+      n/=10;
+    }
+    int sum=0;
+    while(v!=0)
+    {
+      int rem=v%10;
+      sum=(int)(sum+Math.pow(rem,i));
+      v/=10;
+    }
+   return sum==k;
+  
   }
  
 }
