@@ -13,7 +13,7 @@ public static int binary_search(int[]arr,int target)
  
   int start=0;
   int end=arr.length-1;
-  boolean b=arr[start]<arr[end];
+  boolean b=arr[start]<arr[end]; //we are doing this because if sum of start and end becomes greater than that  of integer size it's not going to be executed.
   int mid;
   
 
